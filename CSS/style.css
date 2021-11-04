@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.capa{
+    background: url('/img/ama-dablam-2064522_1920.jpg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: 100%; 
+    background-repeat: no-repeat; 
+    
+}
+
+.box{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    width: 350px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.596);
+    border-radius: 8px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 36px;
+}
+
+.barra{
+   padding-top: 60px;
+}
+
+.dados{
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.user{
+    border: none;
+    border-radius: 4px;
+    height: 30px;
+    text-align: center;
+    padding-right: 45px;
+    padding-left: 45px;
+    background-color: black;
+    transition: 1s ease all;
+    color: white;
+}
+
+.user:hover{
+    background-color: white;
+    border:none;
+    color: black;
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        transform: scale(1.1);
+}
+
+.barra1{
+    padding-top: 25px;
+ }
+
+.senha{
+    border: none;
+    border-radius: 4px;
+    height: 30px;
+    text-align: center;
+    padding-right: 45px;
+    padding-left: 45px;
+    background-color: black;
+    transition: 1s ease all;
+    color: white;
+}
+
+.user:hover{
+    background-color: white;
+    border:none;
+    color: black;
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        transform: scale(1.1);
+}
+
+.check{
+    font-size: 14px;
+    padding-top: 15px;
+    margin-right: 65px;
+}
+
+.logar{
+    padding-top: 15px;
+}
+
+.botao{
+    border: none;
+    background-color: rgb(63, 243, 213);
+    padding-right: 112.5px;
+    padding-left: 112.5px;
+    height: 30px;
+    border-radius: 4px;
+    transition: 1s ease all;
+    cursor: pointer;
+}
+
+.botao:hover{
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.1);
+}
+
+.criar{
+    padding-top: 30px;
+    text-align: center;
+    
+}
+
+.cadastra{
+    height: 25px;
+    margin-top: 9px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 4px;
+    border: none;
+    background-color: black;
+    transition: 1s ease all;
+    color: white;
+    
+}
+
+.cadastra:hover{
+    background-color: white;
+    border:none;
+    color: black;
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        transform: scale(1.1);
+        cursor: pointer;
+}

@@ -1,0 +1,114 @@
+/*Geral*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: #323232;
+    border: none;
+}
+
+input, label {
+    display: block; /*Aqui acontece uma quebra de linha dos 2 elementos*/
+    width: 100%;
+    outline: none;
+}
+
+a {
+    color: #e60084;
+}
+
+body{
+    padding-top: 5vh; /*vh é o tamanho da tela em porcentagem*/
+    background-image: url(../img/buildings-1804481_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*form*/
+
+#main-container{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+
+h1{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem; /*Se adapta ao elemento Root, uma forma de mudar o tamanho*/
+}
+
+form{ /*Rever essa parte*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.full-box {
+    flex: 1 1 100%;
+    position: relative;
+}
+
+.half-box {
+    flex: 1 1 45%;
+    position: relative;
+}
+
+.spacing{
+    margin-right: 2.5%;
+}
+
+label{
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input{
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+}
+
+input:focus{
+    border-color: #e60084;
+}
+
+input[type='submit'] { /*Acho que isso poderia ser um Botão, mas vou seguir o tutorial*/
+    background-color: #e60084;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+    cursor: pointer;
+}
+
+#agreement { /*Isso aqui deixa uma distância entre a caixa e as palavras*/
+    margin-right: 5px; 
+}
+
+#agreement, #agreement-label{
+    display: inline-block;
+    width: auto;
+}
+
+
+/*Validações*/
+
+.error-validation{
+    color: red;
+    position: absolute;
+    top: 57px;
+    font-size: .8rem;
+}
+
+.template{
+    display:none
+}

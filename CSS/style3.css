@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: #ecf0f1;
+}
+
+.content-first{
+   display: flex; 
+   display: none;
+}
+
+.first-colum{
+    text-align: center;
+    flex: 1 0 auto ; /*Forma reduzida pega o espaço e divide proporcionalmente*/
+    z-index: 10; /*Jogou as palavras para frente*/
+}
+.second-colum{
+    flex: 2 0 auto;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.content::before{
+    content: "";
+    position: absolute;
+    background-color: #58af9b;
+    width: 40%;
+    height: 100%;
+    border-left: #58af9b;
+    border-top-left-radius:15px;
+    border-end-start-radius:15px;
+
+    
+}
+
+.content{
+    background-color: white;
+    border-radius: 15px;
+    width: 960px;
+    height: 60%;
+    display: flex; /*Para começar a centralizar*/
+    justify-content: space-between; /*Para por os 2 conteudos uma grande distancia entre eles*/
+    align-items: center; /*Alinha os items só após ter o tamanho de onde deve alinhar definido*/
+    position: relative;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize; /*Pega as primeiras letras e deixa em maiuscula*/
+}
+
+.title-second{
+    color: #58af9b;
+}
+
+.descricao{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.descricao-primary{
+    color: #fff;
+}
+
+.descricao-second{
+    color: #718c8d;
+}
+
+.btn{
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 50px;
+    font-weight: bold;
+    cursor:pointer ;
+    width: 150px;
+    align-self: center;
+    background-color: #58af9b;
+    border: #58af9b 1px solid;
+    transition: 1s all;
+}
+
+.btn:hover{
+    color: #58af9b;
+    background-color: #fff;
+}
+
+.btn-primary{
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+.btn-primary:hover{
+    background-color: white;
+    color: #58af9b;
+}
+
+.title-primary{
+    color: white;
+}
+
+.list-social{
+    display: flex;
+    list-style-type: none;
+    padding: 3px 0px;
+}
+
+
+.item-midia{
+    border: #58af9b solid 1px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #58af9b;
+    margin-right: 10px;
+    transition: 1s all;
+}
+
+.link:hover .item-midia{
+    background-color: white;
+    border-color: white;
+    color: #58af9b;   
+}
+
+.item-midia{
+    color: white;
+    transition: 1s all;
+}
+
+.social-midia{
+    padding: 10px 0 10px 0;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form input{
+    border: none;
+    background-color: #ecf0f1;
+    margin: 8px;
+    height: 34px;
+    width: 304px;
+}
+
+.label-input{
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    margin: 9px;
+    height: 50px;
+
+}
+
+.icon{
+    color: #718c8d;
+    padding: 0 5px;
+}
+
+/*Segundo conteudo*/
+
+.content-second{
+    position: absolute; /*Colocou as duas colunas no meio e uma em cima da outra*/
+    display: flex;
+    
+}

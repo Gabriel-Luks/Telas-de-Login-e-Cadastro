@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root{
+    --azul: #01085C;
+    --Aclaro: #0010DF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+body{
+    background-image: url(../img/asus-rog-republic-of-gamers-pixel-city-de-8-bits-papel-de-parede-1920x1080_48.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container{ /*Forma de centralizar o container*/
+    display: flex;
+    justify-content: center;
+    width: 100%; /*Pra garantir que ele vai ocupar 100% da área que vai ocupar*/
+    margin-top: 100px;
+}
+
+.card{
+    background-color: #ffffff80;
+    padding: 30px;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px #00000070;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--azul);
+}
+
+.label-float input{
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid var(--azul);
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;/*Minimo de largura*/
+    transition: all .3s ease-out;
+    border-radius: 0;
+}
+
+/*Aqui começa a ação de colocar o label pra cima*/
+
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float input:focus{
+    border-bottom: 2px solid var(Aclaro);
+}
+
+.label-float label{
+    color: var(--azul);
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out ;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label{ /*Se tiver um conteudo valido, não sobrepõem*/
+    font-size: 13px;
+    margin: 0;
+    color: var(--Aclaro);
+}
+
+/*Aqui termina*/
+
+button{
+    background-color: transparent;
+    border-color: var(--azul);
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 30px;
+    cursor: pointer;
+    outline: none;
+    transition: all .4s ease-out ;
+    margin-bottom: 40px;
+    padding: 10px 80px;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: var(--azul);
+    color: #ffffff;
+}
+
+.justify{
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 60%;
+}
+
+p{
+    color: var(--azul);
+    font-size: 14pt;
+    text-align: center;
+}
+
+a{
+    color: #71049c;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--azul);
+    transition: all .2s ease-out
+}
+
+.fa-eye{
+    position: absolute;
+    top: 17px;
+    right: 10px;
+    cursor: pointer;
+    color: var(--azul);
+}
