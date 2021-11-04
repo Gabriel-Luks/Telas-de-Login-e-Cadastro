@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f71a0332a7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/style8.css">   
+    <title>Tela de Cadastro</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="card">
+            <h1>Entrar</h1>
+
+            <div id="msgError"></div>
+            <div id="msgSucess"></div>
+
+            <div class="label-float">
+                <input type="text" id="nome" placeholder="" required autocomplete="off">
+                <label id="labelnome" for="nome">Nome</label>
+            </div>
+            
+            <div class="label-float">
+                <input type="text" id="usuario" placeholder="" required autocomplete="off">
+                <label id="labelusuario" for="usuario">Usuário</label>
+            </div>
+
+            <div class="label-float">
+                <input type="password" id="senha" placeholder="" required>
+                <label id="labelsenha" for="senha">Senha</label>
+                <i id="verSenha" class="fas fa-eye"></i>
+            </div>
+
+            <div class="label-float">
+                <input type="password" id="confirmSenha" placeholder="" required>
+                <label id="labelConfirmSenha" for="confirmSenha">Confirma Senha</label>
+                <i id="verConfirmSenha" class="fas fa-eye"></i>
+            </div>
+
+            <div class="justify-center">
+                <button onclick="cadastrar()">Cadastrar</button>
+            </div>
+
+        </div>
+    </div>
+<script src="JS/main.js"></script>
+<script src="JS/main2.js"></script>
+<script src="JS/main3.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style10.css">
+    <title>Fómulário</title>
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset> <!--Isso coloca um tipo de borda-->
+                <legend><b>Fómulário de Clientes</b></legend>
+                    <br>
+                    <div class="input-box">
+                        <input type="text" name="nome" id="nome" class="inputUser" required>
+                        <label for="" class="labelInput">Nome Completo</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="email" id="email" class="inputUser" required>
+                        <label for="" class="labelInput">E-mail</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                        <label for="" class="labelInput">Telefone</label>
+                    </div>
+                    <p>Sexo:</p>
+                    <div class="inform">
+                    <input type="radio" id="Masculino" name="sexo" value="Masculino" required>
+                    <label for="Masculino">Masculino</label>
+                    <br>
+                    <input type="radio" id="feminino" name="sexo" value="feminino" required>
+                    <label for="feminino">Feminino</label>
+                    <br>
+                    <input type="radio" id="outro" name="sexo" value="outro" required>
+                    <label for="outro">Outro</label>
+                    <br>
+                    </div>
+                        <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+                        <input type="date" name="data_nascimento" id="data_nascimento" required>
+                    <div class="input-box">
+                        <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                        <label for="" class="labelInput">Cidade</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="estado" id="estado" class="inputUser" required>
+                        <label for="" class="labelInput">Estado</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="endereco" id="endereco" class="inputUser" required>
+                        <label for="" class="labelInput">Endereço</label>
+                    </div>
+                    <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <title>Tela de Login</title>
+</head>
+<body>
+    <div id="login-container">
+        <h1>Login</h1>
+        <form action="">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" autocomplete="off">
+            <!--type diz o como o HTML deve reconhecer a barra, name serve para o back-end reconhecer, id serve para o JS
+                e CSS reconhecer, placeholder serve para ser a palavra dentro da barra, como uma instrução,
+                 autocomplete mostra os email que geralmente são usados
+                -->
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="password" placeholder="Digite a sua senha">
+            <!--Aqui o type password, colocou bolinhas nas coisas digitadas-->
+            <a href="#" id="forgot-pass">Esqueceu a senha ?</a>
+            <input type="submit" value="Login">
+            <!--submit serve para mandar a informação do formulário para o servidor-->
+        </form>
+        <div id="social-container">
+            <p>Ou entre pelas suas redes sociais</p>
+            <i class="fab fa-instagram fa-lg"></i>
+            <i class="fab fa-linkedin fa-lg"></i>
+        </div>
+        <div id="register-container">
+            <p>Ainda não tem conta ?</p>
+            <a href="#">Criar conta</a>
+        </div>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/f71a0332a7.js" crossorigin="anonymous"></script>
+</html>
